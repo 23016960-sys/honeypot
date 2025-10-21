@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload File</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        form { border: 1px solid #ccc; padding: 20px; border-radius: 5px; width: 300px; }
+        input[type="file"] { margin-bottom: 15px; }
+        input[type="submit"] { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+        input[type="submit"]:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+
+    <h1>Tải Tệp Lên Server</h1>
+
+    <form action="http://127.0.0.1:8080/upload" method="post" enctype="multipart/form-data">
+        
+        <label for="file">Chọn Tệp:</label><br>
+        <input type="file" name="file" id="file" required>
+        
+        <br>
+        <input type="submit" value="Tải Lên">
+    </form>
+
+    <p>Server đang chạy tại <a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a></p>
+
+</body>
+</html>
